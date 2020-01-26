@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pref_mensa_entries">
+        <item>Saarbrücken</item>
+        <item>Homburg</item>
+    </string-array>
+
+    <string-array name="pref_mensa_values">
+        <item>sb</item>
+        <item>hom</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/offline_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/globe" />
+
+            <TextView
+                android:id="@+id/offline_errorTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/offline_image"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="Offline"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/offline_errorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/offline_errorTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Es scheint als sei keine Internetverbindung verfügbar. Überprüfe deine Einstellungen und starte die App neu oder klicke auf 'Erneut versuchen'." />
+
+            <Button
+                android:id="@+id/offline_button_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/offline_errorText"
+                android:layout_centerHorizontal="true"
+                android:text="Erneut versuchen" />
+
+            <TextView
+                android:id="@+id/offline_text_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/offline_button_retry"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="Sollte dieser Fehler angezeigt werden obwohl du eine funktionierende Internetverbindung hast, schicke bitte einen Fehlerbericht ab." />
+
+            <Button
+                android:id="@+id/offline_button_senderror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/offline_text_send"
+                android:layout_centerHorizontal="true"
+                android:text="Fehlerbericht senden" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

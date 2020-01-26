@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="pref_key_general_settings"
+        android:title="Allgemein">
+        <ListPreference
+            android:defaultValue="sb"
+            android:dialogTitle="Wähle deine Mensa"
+            android:entries="@array/pref_mensa_entries"
+            android:entryValues="@array/pref_mensa_values"
+            android:key="pref_key_campus"
+            android:summary="Wähle deine Mensa"
+            android:title="Mensa" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_about"
+        android:title="Über die App">
+        <Preference
+            android:key="pref_key_appversion"
+            android:summary="2.0.2"
+            android:title="App-Version" />
+        <Preference
+            android:key="pref_key_buildnumber"
+            android:summary="1500202"
+            android:title="Build-Nummer" />
+    </PreferenceCategory>
+</PreferenceScreen>

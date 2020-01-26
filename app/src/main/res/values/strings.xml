@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MenSaar</string>
+
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_opening">Öffnungszeiten</string>
+    <string name="title_activity_opening_times">Öffnungszeiten</string>
+    <string name="title_activity_settings">Einstellungen</string>
+
+    <string name="crash_dialog_title">MenSaar ist abgestürzt</string>
+    <string name="crash_dialog_text">Ein unerwarteter Fehler ist aufgetreten und hat die Anwendung zum Absturz gebracht.
+        Hilf diesen Fehler zu beheben indem du den Fehlerbericht weiterleitest.
+        Bevor der Bericht per E-Mail versandt wird, bekommst die Gelegenheit alle Informationen zu überprüfen.</string>
+    <string name="crash_dialog_comment_prompt">Kommentar (optional):</string>
+
+</resources>

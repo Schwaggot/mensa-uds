@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="redfox.android.mensa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@android:style/Theme.Holo.Light">
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mensa-uds.de"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="de.mensa_uds.android.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="de.mensa_uds.android.OpeningTimesActivity"
+            android:label="@string/title_activity_opening_times"
+            android:parentActivityName="de.mensa_uds.android.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.mensa_uds.android.MainActivity" />
+        </activity>
+        <activity
+            android:name="de.mensa_uds.android.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="de.mensa_uds.android.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="de.mensa_uds.android.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
